@@ -157,6 +157,10 @@ import UIKit
 	private func addViews(segmentViews: [UIView]) {
 		guard let scrollView = scrollView else { fatalError("trying to add views but the scrollView is nil") }
 		
+        
+        //bug修复
+        views.removeAll()
+        
 		for view in scrollView.subviews {
 			view.removeFromSuperview()
 		}
