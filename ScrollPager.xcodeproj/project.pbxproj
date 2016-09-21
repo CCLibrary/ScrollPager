@@ -66,6 +66,7 @@
 				15F9717C1A9A86E400169B7E /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		15F9717C1A9A86E400169B7E /* Products */ = {
 			isa = PBXGroup;
@@ -374,7 +375,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -391,7 +392,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
