@@ -37,14 +37,14 @@ class ViewController: UIViewController, ScrollPagerDelegate {
 		fourthView.textAlignment = .center
 		
 		scrollPager.delegate = self
-		scrollPager.addSegmentsWithTitlesAndViews(segments: [
+		scrollPager.addSegmentsWithTitlesAndViews([
 			("Home", firstView),
 			("Public Feed", secondView),
 			("Profile", thirdView),
 			("One More", fourthView)
 			])
 		
-		secondScrollPager.addSegmentsWithImages(segmentImages: [
+		secondScrollPager.addSegmentsWithImages([
 			UIImage(named: "envelope")!,
 			UIImage(named: "home")!,
 			UIImage(named: "like")!,
@@ -55,7 +55,7 @@ class ViewController: UIViewController, ScrollPagerDelegate {
 	
 	// MARK: - ScrollPagerDelegate -
 	
-	func scrollPager(scrollPager: ScrollPager, changedIndex: Int) {
+	func scrollPager(_ scrollPager: ScrollPager, changedIndex: Int) {
 		print("scrollPager index changed: \(changedIndex)")
 	}
 

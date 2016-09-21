@@ -29,7 +29,7 @@
 import UIKit
 
 @objc public protocol ScrollPagerDelegate: NSObjectProtocol {
-    @objc optional func scrollPager(scrollPager: ScrollPager, changedIndex: Int)
+    @objc optional func scrollPager(_ scrollPager: ScrollPager, changedIndex: Int)
 }
 
 @IBDesignable public class ScrollPager: UIView, UIScrollViewDelegate{
@@ -107,7 +107,7 @@ import UIKit
     
     // MARK: - UIView Methods -
     
-    public override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         
         redrawComponents()
@@ -116,7 +116,7 @@ import UIKit
     
     // MARK: - Public Methods -
     
-    public func addSegmentsWithTitlesAndViews(segments: [(title: String, view: UIView)]) {
+    open func addSegmentsWithTitlesAndViews(_ segments: [(title: String, view: UIView)]) {
         
         addButtons(titleOrImages: segments.map { $0.title as AnyObject })
         addViews(segmentViews: segments.map { $0.view })
@@ -124,7 +124,7 @@ import UIKit
         redrawComponents()
     }
     
-    public func addSegmentsWithImagesAndViews(segments: [(image: UIImage, view: UIView)]) {
+    open func addSegmentsWithImagesAndViews(_ segments: [(image: UIImage, view: UIView)]) {
         
         addButtons(titleOrImages: segments.map { $0.image })
         addViews(segmentViews: segments.map { $0.view })
@@ -132,17 +132,17 @@ import UIKit
         redrawComponents()
     }
     
-    public func addSegmentsWithTitles(segmentTitles: [String]) {
+    open func addSegmentsWithTitles(_ segmentTitles: [String]) {
         addButtons(titleOrImages: segmentTitles as [AnyObject])
         redrawComponents()
     }
     
-    public func addSegmentsWithImages(segmentImages: [UIImage]) {
+    open func addSegmentsWithImages(_ segmentImages: [UIImage]) {
         addButtons(titleOrImages: segmentImages)
         redrawComponents()
     }
     
-    public func setSelectedIndex(index: Int, animated: Bool) {
+    open func setSelectedIndex(_ index: Int, animated: Bool) {
         setSelectedIndex(index: index, animated: animated, moveScrollView: true)
     }
     
@@ -157,9 +157,8 @@ import UIKit
     private func addViews(segmentViews: [UIView]) {
         guard let scrollView = scrollView else { fatalError("trying to add views but the scrollView is nil") }
         
-        //bug修复
-        views.removeAll();
-        
+        //bug
+        views.removeAll()
         for view in scrollView.subviews {
             view.removeFromSuperview()
         }
@@ -267,7 +266,7 @@ import UIKit
             return
         }
         
-        delegate?.scrollPager?(scrollPager: self, changedIndex: sender.tag)
+        delegate?.scrollPager?(self, changedIndex: sender.tag)
         
         setSelectedIndex(index: sender.tag, animated: true, moveScrollView: true)
     }
@@ -284,7 +283,7 @@ import UIKit
             
             if Int(page) != selectedIndex {
                 setSelectedIndex(index: Int(page), animated: true, moveScrollView: false)
-                delegate?.scrollPager?(scrollPager: self, changedIndex: Int(page))
+                delegate?.scrollPager?(self, changedIndex: Int(page))
             }
         }
     }
