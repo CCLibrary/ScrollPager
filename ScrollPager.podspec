@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name = 'ScrollPager'
-    s.version = '1.0'
-    s.summary = 'A fully featured scroll pager similar to the one in flipboard, fully configurable through storyboard.Fix some Bugs From ScrollPagerOld'
+    s.version = '1.1'
+    s.summary = 'A fully featured scroll pager similar to the one in flipboard, fully configurable through storyboard.Fix some Bugs From ScrollPagerOld,submit for swift3'
     s.homepage = 'https://github.com/CCLibrary/ScrollPager'
     s.license = {
       :type => 'MIT',
