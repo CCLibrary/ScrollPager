@@ -14,6 +14,8 @@
 		15F9718B1A9A86E400169B7E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15F971891A9A86E400169B7E /* LaunchScreen.xib */; };
 		15F971971A9A86E400169B7E /* ScrollPagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F971961A9A86E400169B7E /* ScrollPagerTests.swift */; };
 		15F971A21A9A870100169B7E /* ScrollPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F971A11A9A870100169B7E /* ScrollPager.swift */; };
+		36A621057E7D99FD8D59AEC3 /* Pods_ScrollPager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D4ABF2B3A8B6D114940819 /* Pods_ScrollPager.framework */; };
+		929CE2E2FE0AF2D4F883B65B /* Pods_ScrollPagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82BB3D61918DC439FD277956 /* Pods_ScrollPagerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03AD022718686B6539BA9C18 /* Pods-ScrollPagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollPagerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollPagerTests/Pods-ScrollPagerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		15F9717B1A9A86E400169B7E /* ScrollPager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollPager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15F9717F1A9A86E400169B7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15F971801A9A86E400169B7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +41,11 @@
 		15F971951A9A86E400169B7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15F971961A9A86E400169B7E /* ScrollPagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPagerTests.swift; sourceTree = "<group>"; };
 		15F971A11A9A870100169B7E /* ScrollPager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollPager.swift; sourceTree = "<group>"; };
+		22D4ABF2B3A8B6D114940819 /* Pods_ScrollPager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollPager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41C5740CD0C9C17951D56700 /* Pods-ScrollPager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollPager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollPager/Pods-ScrollPager.debug.xcconfig"; sourceTree = "<group>"; };
+		7E6CB60253EE9BB6A516CDC3 /* Pods-ScrollPager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollPager.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollPager/Pods-ScrollPager.release.xcconfig"; sourceTree = "<group>"; };
+		7E7B569BD917AFC1B4DE5E6C /* Pods-ScrollPagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollPagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollPagerTests/Pods-ScrollPagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		82BB3D61918DC439FD277956 /* Pods_ScrollPagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollPagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36A621057E7D99FD8D59AEC3 /* Pods_ScrollPager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				929CE2E2FE0AF2D4F883B65B /* Pods_ScrollPagerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +74,8 @@
 				15F9717D1A9A86E400169B7E /* ScrollPager */,
 				15F971931A9A86E400169B7E /* ScrollPagerTests */,
 				15F9717C1A9A86E400169B7E /* Products */,
+				6AF40E4302007FA776C48A21 /* Pods */,
+				711240A31B9D1FBB35D3F668 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 0;
@@ -124,6 +136,26 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		6AF40E4302007FA776C48A21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41C5740CD0C9C17951D56700 /* Pods-ScrollPager.debug.xcconfig */,
+				7E6CB60253EE9BB6A516CDC3 /* Pods-ScrollPager.release.xcconfig */,
+				03AD022718686B6539BA9C18 /* Pods-ScrollPagerTests.debug.xcconfig */,
+				7E7B569BD917AFC1B4DE5E6C /* Pods-ScrollPagerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		711240A31B9D1FBB35D3F668 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22D4ABF2B3A8B6D114940819 /* Pods_ScrollPager.framework */,
+				82BB3D61918DC439FD277956 /* Pods_ScrollPagerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15F9719A1A9A86E400169B7E /* Build configuration list for PBXNativeTarget "ScrollPager" */;
 			buildPhases = (
+				AE336A02A2DF99CF7353D14A /* [CP] Check Pods Manifest.lock */,
 				15F971771A9A86E400169B7E /* Sources */,
 				15F971781A9A86E400169B7E /* Frameworks */,
 				15F971791A9A86E400169B7E /* Resources */,
+				EB6BAE5EB2BD3FD8DC78D347 /* [CP] Embed Pods Frameworks */,
+				FFAFBF9208CAE46924E3A4C9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,9 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15F9719D1A9A86E400169B7E /* Build configuration list for PBXNativeTarget "ScrollPagerTests" */;
 			buildPhases = (
+				BF085AC0E34692BCF751F0B9 /* [CP] Check Pods Manifest.lock */,
 				15F9718C1A9A86E400169B7E /* Sources */,
 				15F9718D1A9A86E400169B7E /* Frameworks */,
 				15F9718E1A9A86E400169B7E /* Resources */,
+				7527F4C86F7BCDB95C28B53E /* [CP] Embed Pods Frameworks */,
+				985577E6877659C589928B6F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,6 +263,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7527F4C86F7BCDB95C28B53E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollPagerTests/Pods-ScrollPagerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		985577E6877659C589928B6F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollPagerTests/Pods-ScrollPagerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE336A02A2DF99CF7353D14A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BF085AC0E34692BCF751F0B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB6BAE5EB2BD3FD8DC78D347 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollPager/Pods-ScrollPager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFAFBF9208CAE46924E3A4C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollPager/Pods-ScrollPager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		15F971771A9A86E400169B7E /* Sources */ = {
@@ -364,6 +495,7 @@
 		};
 		15F9719B1A9A86E400169B7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41C5740CD0C9C17951D56700 /* Pods-ScrollPager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -381,6 +513,7 @@
 		};
 		15F9719C1A9A86E400169B7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E6CB60253EE9BB6A516CDC3 /* Pods-ScrollPager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -398,6 +531,7 @@
 		};
 		15F9719E1A9A86E400169B7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03AD022718686B6539BA9C18 /* Pods-ScrollPagerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 6CEBRU496Y;
@@ -420,6 +554,7 @@
 		};
 		15F9719F1A9A86E400169B7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E7B569BD917AFC1B4DE5E6C /* Pods-ScrollPagerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 6CEBRU496Y;

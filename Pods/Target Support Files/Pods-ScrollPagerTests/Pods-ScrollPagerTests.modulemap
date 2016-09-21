@@ -1,0 +1,6 @@
+framework module Pods_ScrollPagerTests {
+  umbrella header "Pods-ScrollPagerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

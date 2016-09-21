@@ -8,8 +8,8 @@ Pod::Spec.new do |s|
       :file => 'License.txt'
     }
     s.author = {'Cillyfly' => 'https://github.com/CCLibrary/ScrollPager'}
-    #s.source = {:git => 'https://github.com/CCLibrary/ScrollPager.git', :tag =>  s.version.to_s}
-    s.source = {:git => 'https://github.com/CCLibrary/ScrollPager.git'}
+    s.source = {:git => 'https://github.com/CCLibrary/ScrollPager.git', :tag =>  s.version.to_s}
+
     s.platform = :ios, '8.0'
     s.source_files = 'ScrollPager/Source/*.{swift}'
     s.framework = 'Foundation', 'UIKit'
