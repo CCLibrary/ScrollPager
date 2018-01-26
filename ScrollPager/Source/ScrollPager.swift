@@ -86,6 +86,17 @@ import UIKit
     }
     
     @IBInspectable public var animationDuration: CGFloat = 0.2
+    @IBInspectable public var selectionIndicatorHeight:CGFloat = 0
+    
+    public var verticalDividerColor = UIColor.black
+    public var verticalDividerEnabled = false
+    public var verticalDividerWidth = 1.0
+    
+    
+    internal var segmentWidth : CGFloat = 0.0
+    internal var segmentWidthsArray : [CGFloat] = []
+    
+    
     
     // MARK: - Initializarion -
     
@@ -196,6 +207,32 @@ import UIKit
         }
     }
     
+    private func calculateRectDiv(at index: Int, xoffSet: CGFloat?) -> CGRect {
+        var a :CGFloat
+        if xoffSet != nil {
+            a = xoffSet!
+        } else {
+            a = self.segmentWidth * CGFloat(index)
+        }
+        let xPosition = CGFloat( a - CGFloat(self.verticalDividerWidth / 2))
+        let rectDiv = CGRect(x: xPosition,
+                             y: self.selectionIndicatorHeight * 2,
+                             width: CGFloat(self.verticalDividerWidth),
+                             height: self.frame.size.height - (self.selectionIndicatorHeight * 4))
+        return rectDiv
+    }
+    
+    // Add Vertical Divider Layer
+    private func addVerticalLayer(at index: Int, rectDiv: CGRect) {
+        if self.verticalDividerEnabled && index > 0 {
+            let vDivLayer = CALayer()
+            vDivLayer.frame = rectDiv
+            vDivLayer.backgroundColor = self.verticalDividerColor.cgColor
+            self.scrollView?.layer.addSublayer(vDivLayer)
+        }
+    }
+    
+    
     private func moveToIndex(index: Int, animated: Bool, moveScrollView: Bool) {
         animationInProgress = true
         
@@ -210,7 +247,7 @@ import UIKit
             if strongSelf.indicatorSizeMatchesTitle {
                 guard let string = button.titleLabel?.text else { fatalError("missing title on button, title is required for width calculation") }
                 guard let font = button.titleLabel?.font else { fatalError("missing dont on button, title is required for width calculation")  }
-                let size = string.size(attributes: [NSFontAttributeName: font])
+                let size = string.size(withAttributes: [NSAttributedStringKey.font: font])
                 let x = width * CGFloat(index) + ((width - size.width) / CGFloat(2))
                 strongSelf.indicatorView.frame = CGRect(x: x, y: strongSelf.frame.size.height - strongSelf.indicatorHeight, width: size.width, height: strongSelf.indicatorHeight)
             }
@@ -251,8 +288,14 @@ import UIKit
             return
         }
         
+     
+        
         let width = frame.size.width / CGFloat(buttons.count)
         let height = frame.size.height - indicatorHeight
+        
+        
+        //为了增加竖线修改代码
+        self.segmentWidth = width
         
         for i in 0..<buttons.count {
             let button = buttons[i]
@@ -262,7 +305,7 @@ import UIKit
         }
     }
     
-    internal func buttonSelected(sender: UIButton) {
+    @objc internal func buttonSelected(sender: UIButton) {
         if sender.tag == selectedIndex {
             return
         }
