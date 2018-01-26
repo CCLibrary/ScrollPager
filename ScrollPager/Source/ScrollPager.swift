@@ -247,7 +247,7 @@ import UIKit
             if strongSelf.indicatorSizeMatchesTitle {
                 guard let string = button.titleLabel?.text else { fatalError("missing title on button, title is required for width calculation") }
                 guard let font = button.titleLabel?.font else { fatalError("missing dont on button, title is required for width calculation")  }
-                let size = string.size(withAttributes: [NSAttributedStringKey.font: font])
+                let size = (string as NSString).size(withAttributes: [NSAttributedStringKey.font: font])
                 let x = width * CGFloat(index) + ((width - size.width) / CGFloat(2))
                 strongSelf.indicatorView.frame = CGRect(x: x, y: strongSelf.frame.size.height - strongSelf.indicatorHeight, width: size.width, height: strongSelf.indicatorHeight)
             }
